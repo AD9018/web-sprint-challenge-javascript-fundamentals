@@ -27,13 +27,38 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach() iterates through an array but .map() gives you a new array based on what you want to push into it. One is immutable while the other is mutable in some cases. Each have built in iterators but .map takes a callback function. 
+
+
 2. Explain the difference between a callback and a higher order function.
+Higher order functions receive other functions as arguments.
+Callback functions are passed into the other functions as arguments.
+Higher order functions recieve call back functions that are passed in. 
 
 3. What is closure?
+When a function reaches outside of its scope into the parent scope to access a variable, can pass things down but can not pass things up. Reusibility is the main point. 
+
 
 4. Describe the four rules of the 'this' keyword.
+Window binding-
+
+If none of the other rules apply this defaults to the window, unless you are in strict mode in which case it will return undefined. When in the global scope the value of this will be window/console object
+
+Explicit binding-
+
+Explicitly tell JS what the this keyword refers to using call which immediatly innvokes the function.
+
+Implicit binding-
+
+Applies to objects with methods and used in 80% of use cases, when the function is invoked look to the left of the dot that is what this refers to. 
+
+New binding-
+
+When a function is invoked as a constructor function this points to the newly created object
 
 5. Why do we need super() in an extended class?
+
+The super() gives the extended class the parents attributes|| properties || values.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
